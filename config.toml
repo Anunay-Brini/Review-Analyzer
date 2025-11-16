@@ -1,0 +1,19 @@
+# .streamlit/config.toml
+
+\[server\]
+
+# Setting the maximum upload limit to 200MB to ensure the model files can be
+# handled if they get larger, though 50MB is usually the default.
+maxUploadSize = 200
+
+\[client\]
+
+# Setting the client cache to be aggressive for performance
+caching = true
+
+\[global\]
+
+# CRITICAL FIX: Explicitly setting the Python version to 3.10
+# TensorFlow 2.15.0 is known to be stable with Python 3.10, which can solve
+# ModuleNotFoundErrors caused by dependency resolution issues in newer Python versions.
+pythonVersion = "3.10"
