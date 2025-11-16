@@ -1,5 +1,5 @@
-streamlit
-tensorflow
+streamlit==1.36.0
+tensorflow==2.16.1
 numpy
-scikit-learn # Good practice to include if pickle was used for tokenization
-h5py # Often needed for loading .h5 files
+scikit-learn
+h5py
