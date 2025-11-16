@@ -1,0 +1,5 @@
+streamlit
+tensorflow
+numpy
+scikit-learn # Good practice to include if pickle was used for tokenization
+h5py # Often needed for loading .h5 files
